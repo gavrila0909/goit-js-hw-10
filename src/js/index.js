@@ -1,4 +1,6 @@
 import { fetchBreeds, fetchCatByBreed } from "./cat-api";
+import Notiflix from "notiflix";
+
 
 const catInfoDiv = document.querySelector('.cat-info');
 const breedSelect = document.querySelector(".breed-select");
@@ -58,8 +60,7 @@ fetchBreeds()
         })
         .catch(err => {
           console.error(err);
-          errorElement.style.display = "block";
-          loaderElement.style.display = "none";
+          Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!")
         });
     });
 
@@ -67,7 +68,5 @@ fetchBreeds()
   })
   .catch(err => {
     console.error(err);
-    errorElement.style.display = "block";
-    loaderElement.style.display = "none";
-    breedSelect.style.display = "none"; 
+    Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!")
   });

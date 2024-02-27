@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.io/gavrila0909/goit-js-hw-10",
+  "homepage": "https://gavrila0909.github.io/goit-js-hw-10",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^1.6.7",
     "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.7",
     "slim-select": "^2.8.1"
   },
   "devDependencies": {
